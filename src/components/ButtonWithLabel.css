@@ -1,0 +1,84 @@
+
+    @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+    :root {
+      /**
+    * @tokens Spacings
+    * @presenter Spacing
+    */
+      --global-gap-s: 8px;
+      --global-gap-m: 16px;
+      --global-gap-l: 32px;
+      --label-gap: 8px;
+    
+      /**
+    * @tokens BorderRadius
+    * @presenter BorderRadius
+    */
+      --global-border-s: 4px;
+      --global-border-l: 32px;
+      --button-border-radius: 999px;
+    
+      /**
+    * @tokens Colors
+    * @presenter Color
+    */
+      --global-purple: #A5458B;
+      --global-gray: #525457;
+      --global-light-grey: #F5F5F5;
+      --global-light-blue: #EAFBFF;
+      --global-mid-blue: #0375B5;
+      --global-dark-red: #AA0000;
+      --global-brown-500: #EC8814;
+      --global-light-yellow: #FFF2C6;
+      --button-text-color: var(--global-gray);
+      --button-background: var(--global-purple);
+      --button-icon-color: var(--global-light-grey);
+    }
+    
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 72px;
+    }
+    
+    .icon {
+      color: var(--button-icon-color);
+    }
+    
+    .button-label {
+      font-family: 'Heebo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--button-text-color);
+      margin-top: var(--label-gap);
+      white-space: pre;
+    }
+    
+    button {
+      border-radius: var(--button-border-radius);
+      border: 1px solid var(--button-background);
+      box-shadow: inset 0px 16px 18px rgba(255, 255, 255, 0.17), inset 0px 0px 0px 1px #FFFFFF;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      line-height: 1;
+      color: var(--button-text-color);
+      background-color: var(--button-background);
+    }
+    
+    button:hover {
+      opacity: .9;
+    }
+    button:hover ~ .button-label{
+      text-decoration: underline;
+    }
+    
+    button:active {
+      opacity: .9;
+    }
+    
